@@ -25,21 +25,22 @@
  .progress {
     z-index: 100;
     position: fixed;
-    height: 3px;
+    height: 4px;
     display: block;
     width: 100%;
-    background-color: #00e676     ;
+    background-color:#8C92FF ;
     border-radius: 2px;
-    margin: .05rem 0 0 0;
+    margin: .01rem 0 0 0;
     overflow: hidden;
 }
 .progress .indeterminate {
-    background-color: #c6ff00       ;
+    background-color:#80FFFB;
 }
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: red;
+    background-color: blue;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: red;
+    background-color: blue;
+    
 }

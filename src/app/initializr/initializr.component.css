@@ -1,0 +1,7 @@
+ input[type=text]{
+         height: 2rem;
+ }
+ .input-field label {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
