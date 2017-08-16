@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-
+import { InitializrComponent } from './initializr/initializr.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InitializrComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
+  schemas: [NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

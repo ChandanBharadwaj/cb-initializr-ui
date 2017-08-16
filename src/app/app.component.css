@@ -1,0 +1,43 @@
+.side-nav {
+    position: fixed;
+    width: 350px;
+    left: 0;
+    margin-top: 54px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: auto;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    z-index: 12;
+}
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #a62694;
+    border-bottom: 2px solid #a62694;
+    
+}
+.btn-floating.btn-large {
+    width: 66px;
+    height: 66px;
+}
+.btn-large i {
+    font-size: 1.8rem;
+}
+.btn-floating.btn-large i {
+    line-height: 66px;
+}
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
