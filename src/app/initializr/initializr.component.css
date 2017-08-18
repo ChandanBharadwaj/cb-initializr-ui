@@ -2,6 +2,13 @@
          height: 2rem;
  }
  .input-field label {
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 1.2rem;
+}
+label {
+    font-size: 1rem;
+    color: black;
+}
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+        color: darkblue;
 }

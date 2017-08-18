@@ -37,10 +37,19 @@
     background-color:#80FFFB;
 }
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: blue;
+    background-color: #1565c0 ;    
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: blue;
-    
+    background-color: #1565c0 ;    
 }
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #90caf9 ;
+}
+body{
+ font-family:  'Open Sans', sans-serif;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 darkblue;
+    border-bottom: 1px solid darkblue;
+} 
