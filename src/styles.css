@@ -53,3 +53,32 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
     box-shadow: 0 1px 0 0 darkblue;
     border-bottom: 1px solid darkblue;
 } 
+.no-shadow{
+    box-shadow:none;
+}
+.cb-checkbox-card-panel {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 10px;
+    margin: .5rem 0 1rem 0;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkblue;
+    background-color: #fff;
+}
+.cb-checkbox-des{
+    font-size: 80%;
+    font-style: italic;
+    padding-left: 30%;
+}
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 2px;
+}
+

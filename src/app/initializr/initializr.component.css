@@ -12,3 +12,114 @@ label {
 input[type=text]:not(.browser-default):focus:not([readonly])+label{
         color: darkblue;
 }
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid darkblue;
+    border-bottom: 2px solid darkblue;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.cb-chip {
+  display: inline-block;
+  background: #e0e0e0;
+  float:left;
+  padding: 0 12px;
+  border-radius: 32px;
+  font-size: 13px;
+}
+
+.cb-chip.cb-chip-hover:hover {
+  background: #ccc;
+}
+
+.cb-chip-clickable {
+  cursor: pointer;
+}
+
+.cb-chip, .cb-chip-icon {
+  height: 32px;
+  line-height: 32px;
+}
+
+.cb-chip-icon {
+  display: block;
+  float: left;
+  background: #009587;
+  width: 32px;
+  border-color: black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 0 8px 0 -12px;
+}
+
+.red {
+  background: red;
+  border-color: black;
+}
+
+.cb-chip-remove {
+  display: inline-block;
+  background: #aaa;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 -8px 0 8px;
+  cursor: pointer;
+  font: inherit;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.cb-chip-remove:after {
+  content: 'X';
+  padding: 7px;
+  font-size: 13px;
+}
+
+.cb-chip-remove:hover {
+  color: red;
+  background: #999;
+}
+
+.cb-chip-remove:active {
+  background: #777;
+}
+
+.cb-chips {
+  padding: 12px 0;
+}
+
+.cb-chips .cb-chip {
+  margin: 0 5px 3px 0;
+}
+
+.cb-chip-raised {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}

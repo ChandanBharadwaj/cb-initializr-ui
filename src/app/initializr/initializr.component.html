@@ -1,143 +1,271 @@
+<!--Main-->
 <div class="row">
+  <!--Left-->
+  <div class="col s10">
+    <!--Form-->
+    <div class="row">
+      <!--Main Form-->
       <div class="col s9">
         <div class="row">
-            <div class="card z-depth-2 hoverable">
-              <div class="card-content">
-                <div class="row">
-                    <div class="col s1"></div>  
-                  <div class="col 10"><h5 >Generate a Maven Project with Java and Spring-Boot</h5></div>
-                <div class="col s1" style="width: 10%;">
-                  <select >
-                            <option value="" disabled >version</option>
-                            <option value="1.5.6" selected>1.5.6</option>
-                            <option value="1.5.8">1.5.8</option>
-                            <option value="2.0.0">2.0.0</option>
-                      </select>
-                  </div>  
-                        
+          <div class="card z-depth-2">
+            <div class="card-content">
+              <div class="row">
+                <div class="col 10">
+                  <h5>Generate a Maven Project with Java and Spring-Boot -</h5>
                 </div>
+                <div class="col s1 dropdown-button" data-activates='dropdown1'>
+                  <h5 style="cursor: pointer;color: darkblue; text-decoration: underline">1.5.6</h5>
+                </div>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a>1.5.6</a></li>
+                  <li><a>1.5.8</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <h4> Metadata</h4>
                 <div class="row">
-                  <h4> Metadata</h4>
-                  <div class="row">
-                      <div class="col s4">
-                          <div class="input-field">
-                              <input id="Group" type="text" autocomplete="off" placeholder="" value="com.sai.chandan" style="color: black" required>
-                              <label for="Group">Group</label>
-                          </div>
-                          <div class="input-field">
-                              <input id="Artifact" type="text" autocomplete="off" placeholder="" value="demo" style="color: black" required>
-                              <label for="Artifact">Artifact</label>
-                          </div>
-                          <div class="input-field">
-                              <input id="Name" type="text" autocomplete="off" placeholder="" value="demo" style="color: black" required>
-                              <label for="Name">Name</label>
-                          </div>
-                          <div class="input-field">
-                              <input id="package" type="text" autocomplete="off" placeholder="" value="com.sai.chandan" style="color: black" required>
-                              <label for="package">Package</label>
-                          </div>
-                      </div>
-                      <div class="col s2"></div>
-                      <div class="col s6">
-                        Search dependencies here..
-                        <div class="input-field">
-                              <input id="Group" type="text" autocomplete="off" placeholder="web, chub, hso, etc..." style="color: black" required>
-                          </div>                  
-                        selected dependencies :
-                      </div>
-                      </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input id="Group" type="text" autocomplete="off" placeholder="" value="com.sai.chandan" style="color: black" required>
+                      <label for="Group">Group</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="Artifact" type="text" autocomplete="off" placeholder="" value="demo" style="color: black" required>
+                      <label for="Artifact">Artifact</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="Name" type="text" autocomplete="off" placeholder="" value="demo" style="color: black" required>
+                      <label for="Name">Name</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="package" type="text" autocomplete="off" placeholder="" value="com.sai.chandan" style="color: black" required>
+                      <label for="package">Package</label>
+                    </div>
+                  </div>
+                  <div class="col s2"></div>
+                  <div class="col s6">
+                    Search dependencies here..
+                    <div class="input-field">
+                      <input id="Group" type="text" autocomplete="off" placeholder="web, chub, hso, etc..." style="color: black" required>
+                    </div>
+                    selected dependencies :
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
-        <div class="row"> 
-          <div class="col"> 
-          <div class="switch">
-             <label> Switch to full version ? <input type="checkbox"> <span class="lever"></span> </label> 
-              </div></div>
-          <div class="col">               
-              <div class="switch">
-            <label>  Generate with Default configuration <input type="checkbox"> <span class="lever"></span> </label> 
-              </div></div>
-        </div>
-      <div class="row">  
-          <div class="card z-depth-2 hoverable">
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
-          <div class="card-tabs">
-              <ul class="tabs tabs-fixed-width" style="overflow-x: flase">
-                <li class="tab"><a href="#test1" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test1">Spring</a></li>
-                <li class="tab"><a href="#test2" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test2">Sai</a></li>
-                <li class="tab"><a href="#test2" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test2">Chandan</a></li>
-              
-              </ul>
           </div>
-          <div class="card-content grey lighten-4">
-                <div id="test1">Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                </div>
-                <div id="test2">
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                </div>
-                <div id="test3">Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.</div>
-                <div id="test4">Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.
-                  Irure laborum magna aliqua consequat dolore ex exercitation aliqua cillum est. Et in et non exercitation dolor magna. Aute magna voluptate ullamco commodo adipisicing excepteur.</div>
-            </div>
         </div>
       </div>
-     </div>
-      <div class="col s3" style="height: 88%;">
-        <div id="cb-left" class="card z-depth-2 hoverable" style="position: fixed; width: inherit; height: inherit;">
-              <div class="card-content">   
-                <div class="row">
-                <div class="col s2"></div>
-                <div class="col">
-                   <div class="section">
-                      <div class="switch">
-                        <label>
+      <!--Features-->
+      <div class="col s3 hide-on-med-and-down">
+        <div class="card z-depth-1">
+          <div class="card-content">
+            <div class="row">
+              <div class="center">
+                <h5>Features</h5>
+              </div>
+              <div class="col s12">
+                <div class="section center">
+                  <div class="switch">
+                    <label>
                           CheckStyles
                           <input type="checkbox">
                           <span class="lever"></span>
                         </label>
-                      </div>
-                   </div>
-                      <div class="divider"></div>
-                      <div class="section">
-                      <div class="switch">
-                        <label>
-                          PMD - CheckStyles
-                          <input type="checkbox">
-                          <span class="lever"></span>
-                        </label>
-                      </div></div>
-                      <div class="divider"></div>
-                      <div class="section">
-                      <div class="switch">
-                        <label>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section center">
+                  <div class="switch">
+                    <label>
                          Manifest
                           <input type="checkbox">
                           <span class="lever"></span>
                         </label>
-                      </div></div>
-                   </div>
-                  </div>             
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="section center">
+                  <div class="switch">
+                    <label>
+                          Swagger
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                        </label>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!--switch-->
+        <div class="row">
+          <div class="col s12 center">
+            <div class="switch">
+              <label>Default configuration <input type="checkbox"> <span class="lever"></span> </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center">
+            <div class="switch">
+              <label>Full version ? <input type="checkbox"> <span class="lever"></span> </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!--Tabs-->
+    <div class="row">
+      <div class="card z-depth-2 hoverable">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+            markup to use effectively.</p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width" style="overflow-x: flase">
+            <li class="tab"><a href="#test1" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test1">Spring</a></li>
+            <li class="tab"><a href="#test2" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test2">RSP</a></li>
+            <li class="tab"><a href="#test3" class="tooltipped" data-position="bottom" data-delay="560" data-tooltip="It is Test2">Other</a></li>
+          </ul>
+        </div>
+        <div class="card-content white lighten-4">
+          <div id="test1">
+            <div class="row">
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="web" />
+                    <label for="web">Web</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="red" />
+                    <label for="red">Red</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                  <span class="new badge"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test2">
+                <div class="row">
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="web" />
+                    <label for="web">Web</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="red" />
+                    <label for="red">Red</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                  <span class="new badge"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="web" />
+                    <label for="web">Web</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel no-shadow">
+                  <p>
+                    <input type="checkbox" id="red" />
+                    <label for="red">Red</label>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="cb-checkbox-card-panel">
+                  <input type="checkbox" id="blue" />
+                  <label for="blue">blue</label>
+                  <span class="new badge"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test3">
+            test 3
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--chips-->
+  <div class="col s2 hide-on-med-and-down">
+  </div>
+</div>
+<ul id="slide-out" class="side-nav fixed hide-on-med-and-down" style="z-index: 1">
+  <li>
+    <div class="section"></div>
+  </li>
+  <li>--chips--</li>
+  <div class="row">
+      <div class="cb-chips">
+        <div class="cb-chip cb-chip-hover cb-chip-raised">
+          <div class="cb-chip-icon red">A</div>
+          web
+          <div class="cb-chip-remove"></div>
+        </div>
+   
+        <div class="cb-chip cb-chip-hover cb-chip-raised">
+          <div class="cb-chip-icon red">A</div>
+          websf
+          <div class="cb-chip-remove"></div>
+        </div>
+        <div class="cb-chip cb-chip-hover cb-chip-raised">
+          <div class="cb-chip-icon red">A</div>
+        skgjlgjgsdjfgjsgk
+          <div class="cb-chip-remove"></div>
+        </div><div class="cb-chip cb-chip-hover cb-chip-raised">
+          <div class="cb-chip-icon red">A</div>
+          web
+          <div class="cb-chip-remove"></div>
+        </div>
+      </div>  
+      </div>  
+</ul>
+<div data-activates="slide-out" class="button-collapse"></div>
